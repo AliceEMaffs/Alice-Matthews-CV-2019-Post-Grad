@@ -1,0 +1,249 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,top=1.2cm,bottom=1.2cm,left=2cm,right=2cm,marginparwidth=0cm]{geometry}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{enumitem}
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+
+%FONTS
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \rmfamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor} \footnotesize \rmfamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \rmfamily \upshape}
+
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alice Matthews with \XeTeX\  \today\ for 
+%			{\wmweb \href{https://www.linkedin.com/in/alice-matthews-a82616111/}{}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\namestyle{\Huge{Alice Eleanor Matthews}}\\[0.2em]
+\addressstyle Address: 66 Alexandra Road, Warlingham, Surrey, CR6 9DU, UK \\
+Email: \href{mailto:aliceemaffs@live.co.uk}{aliceemaffs@live.co.uk}\ $\cdot$  Phone: +44760205618 $\cdot$ \href{https://www.linkedin.com/in/alice-matthews-a82616111/}{LinkedIn}\\	}\bigskip\par}
+
+
+
+%\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+MASTERS PROJECT at the University of Manchester, UK | Obtained 81\% average\\
+%Particle Physics Department | \small\emph{Vector boson fusion, ATLAS, beyond the Standard Model}\\
+&\textsc{Sep. - Present.}\textsc{2019}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.2cm]
+\setlength\itemsep{0em}
+
+ \item Undergraduate masters in physics (MPhys) project, working with ATLAS, CERN (the European Organisation for Nuclear Research), under the supervision of Professor Terence Wyatt with project title `Attempting a first observation of tau pairs produced in vector boson fusion'.
+ 
+ \item Throughout this project I have demonstrated my coding abilities and knowledge in physics in writing code in C++ (object oriented), Python and C to analyse big data using ROOT software.
+
+ %\item A full report was documented on the first half of the full year project obtaining an overall grade of 78\%. 
+
+\end{itemize}
+
+RESEARCH INTERN at Institute of Planetology and Astrophysics of Grenoble (IPAG), Grenoble, France\\
+Interstellar department | \small\emph{Star formation, astrochemistry, molecular clouds, water, cosmic-rays, ISM} |  \href{http://ipag.osug.fr/recherche/equipes/astrophysique-moleculaire/?lang=fr}{IPAG-link}\\
+\textsc{Jun. - Sep.}\textsc{2017}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.2cm]
+\setlength\itemsep{0em}
+
+ \item Intensive study and derivation of cosmic-ray desorption and propagation in the ISM from first principles. 
+ 
+ \item Studied the formation mechanisms of water in molecular clouds. Simulated the molecular evolution at various stages of the gravitational collapse of the molecular cloud into a pre-stellar core, whilst altering chemistry and other parameters to measure the importance of initial cloud chemistry and other physical phenomena.
+ 
+ \item Developed Python and FORTRAN scripts to compute the ionisation rate and ice desorption by cosmic rays. 
+ 
+ \item Performed extensive studies on the ortho-para ratio of water (HHO-H2O), the results of which are published in the following paper: \url{https://doi.org/10.1093/mnras/stz1531}. The ortho-to-para ratio of water in interstellar clouds. Faure A., Hily-Blant P., Pineau des Forêts G., Matthews A. 2019.
+\end{itemize}
+
+OBSERVER at IRAM 30m Telescope, Sierra Nevada, Spain\\
+\textsc{Jun. - Sep.}\textsc{2017}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.2cm]
+\setlength\itemsep{0em}
+
+ \item Worked at IRAM observatory in the Sierra Nevada for 7 days as part of an external research program dedicated to studying discrepancies between nitrogen-bearing species in proto-stellar cores. 
+ 
+ \item Learned observing techniques for the IRAM 30~m radio telescope by performing supervised and solo observations (summing a total of 70 observing hours) in the sub-millimetre radio range. I learned how to calibrate, point and focus the telescope as well as perform a mapping of the sky. 
+ 
+ \item I was introduced to the workings of radio telescopes. In addition to this, in a masters year module I learned the main principles in radio-astronomy such as heterodyne receivers, telescope sensitivity, noise and calibration methods, amplification, mixers, auto-correlation and spectrometer principles.
+ 
+ \item Measured nitrogen isotopic ratios using spectroscopy techniques in proto-stellar cores in using software such as GILDAS and Xephem.
+ %(specifically L1498, L1544 and L183 core regions).
+ 
+ \item Observed quantum transitions of HCN and HNC and 13C and 15N isotopologues in the L1498 Taurus environment. 
+ 
+ \item This experience is one I will cherish and has given me much motivation and passion to further my understanding in the science and technology.
+ 
+\end{itemize}
+
+%\newpage
+SUMMER INTERN at MBDA, Bristol\\
+WSSE | \small\emph{Weapons System Simulation and Experimentation} \\
+\textsc{Jun. - Sep.}\textsc{2017}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.2cm]
+\setlength\itemsep{0em}
+
+ \item Responsible for editing and testing software using VBS, GitHub, GUI in C++. Connecting multiple networks with the simulator systems (test-bed) using distributed system methods.
+  
+ \item Developed a simulation environment along with thorough documentation ensuring user guides were accurate and readable as well as following security and company standards, all met with a strict deadlines for its handover to an external organisation at the world leading defence show DSEI.
+ 
+ \item I had the opportunity to work as an exhibitor in London for 10 days at DSEI. I was responsible for giving simulation demonstrations to guests and other organisations, including governmental bodies. This was an amazing opportunity and improved my communications and confidence immensely.
+ 
+ \item Throughout my time at MBDA, I expressed high enthusiasm, worked on multiple projects, testing my project management and organisation skills and was invited back for a further placement in 2018.
+ 
+\end{itemize}
+
+LAB WORK at JODRELL BANK, Manchester\\
+\textsc{Crab Pulsar Experiment} | \small\emph{Radio astronomy - observing pulsar and light sources}\\
+\textsc{ Sep. - Oct.} \textsc{2017}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+ \setlength\itemsep{0em}
+ 
+    \item Worked at Jodrell Bank for 6 weeks. This experience sparked my initial interest in radio-astronomy as well as improving my team building, punctuation, communication and project management skills.
+    
+    \item First hand experience in radio astronomy obtaining and analysing pulsar data from the Lovell and 42ft telescopes. 
+    
+    \item This experience enhanced my ability to use new equipment effectively and I developed an understanding how radio systems work.
+    
+    \item Wrote small scripts in C++ to study pulsar harmonics.
+    %using FFT techniques, correcting for time delays such as for Solar System barycentric corrections and in obtaining true arrival time data. 
+    This greatly improved my logical thinking, programming and understanding of handling and analysing raw data as well as using radio-astronomy data methods.
+
+    \item The technical work on equipment and ability to analyse data advanced dramatically. I gained multiple new skills and confidence in methods of calibration, analysis techniques and data manipulation. Results were concluded and presented in a lab report and an hour presentation.
+
+\end{itemize}
+ 
+% \vspace{0.1cm}
+%Section: Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+MPHYS at THE UNIVERSITY OF MANCHESTER\\ 
+ \textsc {Graduated with a 2:1} | \small\emph{81\% in Final Masters Project}\\
+  \textsc{Sep.} 2015 - \textsc{ Jun}. 2019
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+
+    \item Completed a six month masters project working alongside my supervisor Professor Terrance Wyatt, and laboratory partner Luca Gaidoni. The project was working on the ATLAS experiment at CERN, in attempt to observe the  decay of two $\tau$ particles, from the electroweak production of a $Z$ boson in association with two jets, via the vector boson fusion of two $W$ bosons. This project enabled me to improve of my software skills, through extensive use of the software package ROOT v6, with object-oriented programming in C and C++, as well as writing small scripts in Python and handling large amounts of data. I loved working alongside my colleagues and have learnt the importance of consistency, communication and discipline throughout this project. 
+    
+    \item Programming courses: C++ object-oriented programming: 78\%, Python: 72\%, I am also familiar with MATLAB, FORTRAN and Scientific Linux, used in other research projects.
+    
+    \item As a physics masters student I have learned to approach challenging concepts and problems. I have learnt to handle uncomfortable situations where the answer to a problem is not obvious, and that the solution is often found through determination, patience and practise.
+    
+    \item I am approachable, friendly and extremely driven and love learning new skills and being challenged as well as helping in external projects to further widen my experience and skills and partaking in Outreach events.
+    %\item I have many personal and academic interests including high energy particle physics,radio astronomy, astrophysics and cosmology, communications, software, climate change and the environment, human and animal rights.
+    
+\end{itemize}
+
+%\begin{tabular}{lll}
+    FOUNDATION YEAR, The University of Manchester | \textsc{Sep.} 2014 -\textsc{Jun}. 2015 | \small\emph{83\%}\\
+    SIXTH FORM, Saint Bedes School, Redhill|  \textsc{Sep.} 2007 - \textsc{Jun}. 2014 | {A-levels: \emph{ABB}} | {GCSEs : \emph{3A*, 5A, 2B, 2C 2D}}
+    
+%\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+%\setlength\itemsep{0em}
+% \item Introduced to more advanced physics in subjects including: waves and particles, electromagnetism, thermal and statistical physics.
+% \item Took introductory modules in ICT, mathematical modules in mechanics, probability, statistics and logic.
+% \item Completed an 8 week research project on the physics of diffraction, which was presented in a joint 8500 word report.
+ % \item Had weekly examinations improving my punctuation and organisation, gave monthly assessed presentations followed by marked feedback, improving my confidence in public speaking and presentation skills.
+% \end{itemize}
+
+% Section Other Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Other Experience}
+%\begin{tabular}{rp{12cm}}
+
+ GENERAL SECRETARY and DIRECTOR OF SOCIAL MEDIA \\&
+ UMSC | \small\emph{The University of Manchester Surf Club} \\
+ \textsc{Sep.} 2016 -  \textsc{Jun.} 2018
+ \vspace{0.1mm}
+
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+ \setlength\itemsep{0em}
+    \item Was responsible for general admin, organising socials and trips, ensuring member safety by running beginner surf lessons and entertaining the members by organising games and social activities.
+    \item Collaborated with companies such as Sponsurf, Lost Cove Festival and Warehouse Project.
+    \item Increased social exposure across social media platforms such as Facebook, Snapchat and Instagram.
+
+    
+\end{itemize}
+
+\textsc PHYSICS OUTREACH \\
+Volunteer Program | \small\emph{The University of Manchester} \\
+\textsc{Sep.} 2015 - \textsc{Present} 
+\vspace{0.1mm}
+ 
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+\setlength\itemsep{0em}
+
+    \item Collaborated with schools and organisations such as CERN and Bluedot festival outreach events such as giving public talks, demonstrations and coding classes to inspire children and adults about science.
+
+\end{itemize}
+
+RADIO SHOW HOST \textit{`The Physics Show'} \\Fuse FM
+|\small\emph{The University of Manchester} 
+\\\textsc{Jun. - Sep.} 2015
+\vspace{0.1mm}
+ 
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+\setlength\itemsep{0em}
+
+    \item Broadcasting live in Manchester; discussing the latest science discoveries, ideas and research, along with local news and events, interviewed university physics lecturers including professor Brian Cox, Tim O’Brien and Rob Appleby, discussing current research and life at the university.
+
+\end{itemize}
+
+\textsc{FURTHER WORK}
+\begin{itemize}[leftmargin=*,topsep=0pt,noitemsep,parsep=0pt,partopsep=0pt,rightmargin=0.5cm]
+\item \vspace{0.1mm} \textsc{Part time work} in hospitality alongside my degree | \textsc{Mar. } 2013 - Present \\
+\footnotesize\emph{The Horseshoe Pub, Bill's, El Gato Negro, Rota: Radisson Blue Hotel, Manchester Arena.}
+\item \vspace{0.1mm} \textsc{Personal Tutor with Choice Home Tutoring} | \textsc{Oct } 2017 - 2018
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Additional Skills and Interests}
+\begin{tabular}{rp{11cm}}
+\textsc{Interests} &{The physical universe, engineering, research and technology, radio astronomy, climate, nature and environmental science, renewable energy and security.}\\
+\textsc{Myself} &{I am energetic, curious, creative, approachable and motivated. I like to approach new challenges with an open mind and to take the initiative. I have a passion for trying new things and to explore new places and opportunities.}\\
+\textsc{Computational} &{C++, Python, ROOT, Scientific Linux 6, Xephem, GILDAS,  Word, Excel, Powerpoint,Publisher and \fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}.\\
+\textsc{Activities} &{An active surfer, played ice hockey for the Manchester Metros team (2018) and a skiing, biking, rock climbing enthusiast.}\\
+
+\end{tabular}
+\end{document}
